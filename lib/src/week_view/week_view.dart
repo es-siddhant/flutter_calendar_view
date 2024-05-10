@@ -495,6 +495,7 @@ class WeekViewState<T extends Object?> extends State<WeekView<T>> {
                     height: _height,
                     width: _width,
                     child: PageView.builder(
+                      physics: NeverScrollableScrollPhysics(),
                       itemCount: _totalWeeks,
                       controller: _pageController,
                       physics: widget.pageViewPhysics,
