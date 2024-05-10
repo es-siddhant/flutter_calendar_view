@@ -498,7 +498,7 @@ class WeekViewState<T extends Object?> extends State<WeekView<T>> {
                       physics: NeverScrollableScrollPhysics(),
                       itemCount: _totalWeeks,
                       controller: _pageController,
-                      physics: widget.pageViewPhysics,
+                      // physics: widget.pageViewPhysics,
                       onPageChanged: _onPageChange,
                       itemBuilder: (_, index) {
                         final dates = DateTime(_minDate.year, _minDate.month,
